@@ -12,7 +12,7 @@ it('google test', function() {
 it.only('login test', function(){
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     cy.get('[name=username]').type('admin')
-    cy.get('[name=passwordx]').type('admin123')
+    cy.get('[name=password]').type('admin123')
     cy.get('.oxd-button').click()
     cy.contains('Admin').click()
     cy.get('.orangehrm-header-container > .oxd-button').click()
